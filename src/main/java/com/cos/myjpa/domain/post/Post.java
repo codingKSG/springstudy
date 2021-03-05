@@ -35,9 +35,12 @@ public class Post {
 	private String title;
 	@Lob // 대용량 데이터
 	private String content;
+	
+	// 순방향 맵핑
 	@ManyToOne(fetch = FetchType.EAGER) 
 	@JoinColumn(name = "userId")
 	private User user;
+	
 	@CreationTimestamp // 값 들어올 때 자동으로 현재 시간이 들어감.
 	private LocalDateTime createDate;
 }

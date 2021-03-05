@@ -3,7 +3,7 @@ server:
     context-path: /    encoding:      charset: utf-8
       enabled: true  port: 80
 
-spring:  datasource:    url: jdbc:h2:file:~/testdb
+spring:  datasource:    url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: sa
     password: 
